@@ -1,6 +1,8 @@
 # Python Methods and Data Structures: PyBank and PyRamen
 
-https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank/blob/main/PyBank/Resources/revenue-per-lead.jpg
+
+
+[![PyBankImage](https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank/blob/main/PyBank/Resources/revenue-per-lead.jpg)](https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank)
 
 * This repository includes python Jupyter notebooks and associated files for the PyBank and PyRamen Exercises.
 
