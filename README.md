@@ -1,5 +1,7 @@
 # Python Methods and Data Structures: PyBank and PyRamen
 
+https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank/blob/main/PyBank/Resources/revenue-per-lead.jpg
+
 * This repository includes python Jupyter notebooks and associated files for the PyBank and PyRamen Exercises.
 
 * The purpose of this code is to demonstrate Python proficiency in working with CSV files, lists, dictionaries, loops and particulary nested data structures. 
