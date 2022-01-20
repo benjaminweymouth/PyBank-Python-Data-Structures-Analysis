@@ -1,6 +1,14 @@
 ## Python for Finance: Methods / Data Structures
 
-You can use the [editor on GitHub](https://github.com/benjaminweymouth/Python-Data-Structures-PyBank-PyRamen/edit/gh-pages/docs/index.md) to maintain and preview the content for your website in Markdown files.
+This repo explores Python methods and data structures in two different example Python scripts.
+
+The two examples are as follows: 
+
+1. [PyBank](https://benjaminweymouth.github.io/Python-Data-Structures-PyBank-PyRamen/PyBankExample/): where I utilize a Python script for analyzing the financial records of a fictional company.
+2. [PyRamen](https://benjaminweymouth.github.io/Python-Data-Structures-PyBank-PyRamen/PyRamenExample/):: where I utilize 
+ I utilize a dataset: budget_data.csv. This dataset is composed of two columns, Date and Profit/Losses.
+
+You can use the  to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
