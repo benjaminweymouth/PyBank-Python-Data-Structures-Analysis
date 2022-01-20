@@ -1,4 +1,6 @@
-# Python For Finance: Code Explanation & Relevance
+# Python for Finance: Methods / Data Structures
+
+## Code Explanation & Dataset
 
 The purpose of this code is to demonstrate Python proficiency in working with CSV files, lists, dictionaries, loops and particulary nested data structures. 
 
