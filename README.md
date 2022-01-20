@@ -1,5 +1,5 @@
-# Python Methods and Data Structures: PyBank and PyRamen
-
+# Python for Finance: Methods / Data Structures
+## PyBank / PyRamen Code Examples
 
 
 [![PyBankImage](https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank/blob/main/PyBank/Resources/revenue-per-lead.jpg)](https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank/blob/main/PyBank/main.ipynb)
