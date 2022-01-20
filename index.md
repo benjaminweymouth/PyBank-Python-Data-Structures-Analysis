@@ -1,11 +1,11 @@
 # Python For Finance: Methods and Data Structures
 # PyBank and PyRamen Examples
 
-* The purpose of this code is to demonstrate Python proficiency in working with CSV files, lists, dictionaries, loops and particulary nested data structures. 
+The purpose of this code is to demonstrate Python proficiency in working with CSV files, lists, dictionaries, loops and particulary nested data structures. 
 
-Here there is a Python script for analyzing the financial records of a fictional company. I utilize a dataset: budget_data.csv. This dataset is composed of two columns, Date and Profit/Losses. 
+The code below is a Python script for analyzing the financial records of a fictional company. I utilize a dataset: budget_data.csv. This dataset is composed of two columns, Date and Profit/Losses. This code originally appeared in a Jupyter notebook on Github. 
 
-The script will utilze the following actions / methods. 
+The script will utilze the following actions / methods:  
 
 - The total number of months included in the dataset.
 
