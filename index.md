@@ -1,5 +1,4 @@
-# Python For Finance: Methods and Data Structures
-# PyBank and PyRamen Examples
+# Python For Finance: Code Explanation & Relevance
 
 The purpose of this code is to demonstrate Python proficiency in working with CSV files, lists, dictionaries, loops and particulary nested data structures. 
 
