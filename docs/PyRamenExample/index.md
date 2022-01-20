@@ -1,9 +1,6 @@
 # PyRamen Example: Methods / Data Structures
 
-## Code is Divided into two pages: 
-
-## PyBank:  https://benjaminweymouth.github.io/Python-Data-Structures-PyBank-PyRamen/PyBankExample
-
+ 
  ```python
 #PyRamen - Python Homework 1 - Benjamin Weymouth 
 ```
