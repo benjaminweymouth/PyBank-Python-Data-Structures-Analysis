@@ -1,9 +1,7 @@
 # PyRamen Example: Methods / Nested Data Structures
 
 ## Code Explanation & Dataset
-The purpose of this code is to demonstrate Python proficiency in working with Python methods and nested data structures.
-
-The code below is a Python script for analyze a business's financial performance by cross-referencing their sales data with internal product data to figure out revenues and costs for the year.
+The purpose of this code is to analyze a business's financial performance by cross-referencing their sales data with internal product data to figure out revenues and costs for the year.
 
 The script will utilze the following actions / methods:
 
