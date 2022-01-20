@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+# Python Methods and Data Structures: PyBank and PyRamen
 
-You can use the [editor on GitHub](https://github.com/benjaminweymouth/Python-Data-Structures-PyBank-PyRamen/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+[![PyBankImage](https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank/blob/main/PyBank/Resources/revenue-per-lead.jpg)](https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank/blob/main/PyBank/main.ipynb)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Live Deployed Page: https://benjaminweymouth.github.io/Python-Data-Structures-PyBank-PyRamen/
 
-```markdown
-Syntax highlighted code block
+* The purpose of this code is to demonstrate Python proficiency in working with CSV files, lists, dictionaries, loops and particulary nested data structures. 
 
-# Header 1
-## Header 2
-### Header 3
+Here there is a Python script for analyzing the financial records of a fictional company. I utilize a dataset: budget_data.csv. This dataset is composed of two columns, Date and Profit/Losses. 
 
-- Bulleted
-- List
+The script will utilze the following actions / methods. 
 
-1. Numbered
-2. List
+- The total number of months included in the dataset.
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+- The net total amount of Profit/Losses over the entire period.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+- The average of the changes in Profit/Losses over the entire period.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/benjaminweymouth/Python-Data-Structures-PyBank-PyRamen/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+- The greatest increase in profits (date and amount) over the entire period.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+- The greatest decrease in losses (date and amount) over the entire period.
