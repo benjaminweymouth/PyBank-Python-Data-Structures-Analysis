@@ -4,261 +4,212 @@
 
 The purpose of this code is to demonstrate Python proficiency in working with CSV files, lists, dictionaries, loops and particulary nested data structures. 
 
-The code below is a Python script for analyzing the financial records of a fictional company. I utilize a dataset: budget_data.csv. This dataset is composed of two columns, Date and Profit/Losses. This code originally appeared in a Jupyter notebook on Github. 
+ ```python
+#PyRamen - Python Homework 1 - Benjamin Weymouth 
+```
 
-The script will utilze the following actions / methods:  
-
-- The total number of months included in the dataset.
-
-
-- The net total amount of Profit/Losses over the entire period.
-
-
-- The average of the changes in Profit/Losses over the entire period.
-
-
-- The greatest increase in profits (date and amount) over the entire period.
-
-
-- The greatest decrease in losses (date and amount) over the entire period.
 
 ```python
 #import required libraries 
 import csv
 from pathlib import Path
-import numpy as np 
 ```
 
 
 ```python
-# set up the file path 
-# importing the financial dataset 
-csvpath = Path('./Resources/budget_data.csv')
-csvpath
+# set up the file path for menu and check it 
+menu_filepath = Path('./Resources/menu_data.csv')
+menu_filepath
 ```
 
 
 
 
-    WindowsPath('Resources/budget_data.csv')
+    WindowsPath('Resources/menu_data.csv')
 
 
 
 
 ```python
-# Initialize list to hold financial date data  
-dates = []
+# set up the file path for sales and check it 
+sales_filepath = Path('./Resources/sales_data.csv')
+sales_filepath
+```
 
-#list holding only the financial profits and losses 
-profit_losses = []
+
+
+
+    WindowsPath('Resources/sales_data.csv')
+
+
+
+
+```python
+#list objects for menus and sales data 
+menus = []
+sales = []
 ```
 
 
 ```python
-# use open method to open csvpath 
-with open(csvpath, 'r') as csvfile:
+# Read in the menu data into the menu list
 
-    # check datatype 
+with open(menu_filepath, 'r') as csvfile:
+
+    # check type
     print(type(csvfile))
 
     # set up csv.reader, specify a delimiter 
     csvreader = csv.reader(csvfile, delimiter=',')
     # check csv datatype 
     print(type(csvreader))
+    
+      # skip over header
+    header = next(csvreader)
         
+    #read in menu data into a list object 
+    for row in csvreader:
+        # menu variable equal to menu row values 
+        menu = row[0:5]
+        # Append the row menu value to the list of menus
+        menus.append(menu)
+```
+
+    <class '_io.TextIOWrapper'>
+    <class '_csv.reader'>
+    
+
+
+```python
+#print total number of records in menu data
+#should be 32 because we skipped the header   
+
+print(len(menus))
+```
+
+    32
+    
+
+
+```python
+# Read in the sales data into the sales list
+# use open method to open sales_filepath
+
+with open(sales_filepath, 'r') as csvfile:
+
+    # check type
+    print(type(csvfile))
+
+    # set up csv.reader, specify a delimiter 
+    csvreader = csv.reader(csvfile, delimiter=',')
+    
+    # check csv datatype 
+    print(type(csvreader))
+    
     # skip over header
     header = next(csvreader)
         
     #read in data into a list object 
     for row in csvreader:
-        # date variable equal to date row values 
+        # sale variable equal to sale row values 
          
-        date = row[0]
-        # Append the row date value to the list of dates
-        dates.append(date)
-        #set profit_loss value and casting to an integer 
-        profit_loss = int(row[1])
-        profit_losses.append(profit_loss)      
-    
+        sale = row[0:5]
+        # Append the row sale value to the list of sales
+        sales.append(sale)
 ```
 
     <class '_io.TextIOWrapper'>
     <class '_csv.reader'>
-    ['Date', 'Profit/Losses']
     
 
 
 ```python
-#initialize Variables for total and count 
-
-total_profit_losses = 0
-count_profit_losses = 0
-
-#use profit_losses list to find total and count 
-
-for profit_loss in profit_losses:
-
-    # Sum the total and count variables
-    total_profit_losses += profit_loss
-    count_profit_losses += 1
-
-#for testing purposes, printing values of variables 
-print(total_profit_losses)  
-print(count_profit_losses)
- 
+# Initialize dict object to hold our key-value pairs of items and metrics
+report = {}
+report
 ```
 
-    38382578
-    86
+
+
+
+    {}
+
+
+
+
+```python
+#list for data that doesnt match 
+no_match = []
+
+#loop through the sales list, check if the menu_item column exists in the dictionary called report 
+
+for row in sales:
+    #set sales data metrics, specify row and cast quantity to integer
+    menu_item = row[4]
+    quantity = int(row[3])
+    
+    #check for item, if not already there add initialized metrics
+    if menu_item not in report:
+        report[menu_item] = { "01-count": 0, "02-revenue": 0, "03-cogs": 0, "04-profit": 0,}
+    for i in menus: 
+        item = i[0]
+        price = float(i[3])
+        cost = float(i[4])
+        profit = (price - cost) 
+        #if sales item matches menu item, track metrics
+        if item == menu_item:
+            report[menu_item]["01-count"] += quantity
+            report[menu_item]["02-revenue"] += price * quantity
+            report[menu_item]["03-cogs"] += cost * quantity
+            report[menu_item]["04-profit"] += profit * quantity
+        #if sales item does not match, append message to list 
+        elif item != menu_item: 
+            no_match.append(f"{menu_item} does not equal {item}! NO MATCH!")
+```
+
+
+```python
+#Print out the matching Data with the metrics (will also be written to output.txt file)
+print(report) 
+
+#for testing purposes: prints content of list that holds "no matches"
+#print(no_match)
+```
+
+    {'spicy miso ramen': {'01-count': 9238, '02-revenue': 110856.0, '03-cogs': 46190.0, '04-profit': 64666.0}, 'tori paitan ramen': {'01-count': 9156, '02-revenue': 119028.0, '03-cogs': 54936.0, '04-profit': 64092.0}, 'truffle butter ramen': {'01-count': 8982, '02-revenue': 125748.0, '03-cogs': 62874.0, '04-profit': 62874.0}, 'tonkotsu ramen': {'01-count': 9288, '02-revenue': 120744.0, '03-cogs': 55728.0, '04-profit': 65016.0}, 'vegetarian spicy miso': {'01-count': 9216, '02-revenue': 110592.0, '03-cogs': 46080.0, '04-profit': 64512.0}, 'shio ramen': {'01-count': 9180, '02-revenue': 100980.0, '03-cogs': 45900.0, '04-profit': 55080.0}, 'miso crab ramen': {'01-count': 8890, '02-revenue': 106680.0, '03-cogs': 53340.0, '04-profit': 53340.0}, 'nagomi shoyu': {'01-count': 9132, '02-revenue': 100452.0, '03-cogs': 45660.0, '04-profit': 54792.0}, 'soft-shell miso crab ramen': {'01-count': 9130, '02-revenue': 127820.0, '03-cogs': 63910.0, '04-profit': 63910.0}, 'burnt garlic tonkotsu ramen': {'01-count': 9070, '02-revenue': 126980.0, '03-cogs': 54420.0, '04-profit': 72560.0}, 'vegetarian curry + king trumpet mushroom ramen': {'01-count': 8824, '02-revenue': 114712.0, '03-cogs': 61768.0, '04-profit': 52944.0}}
     
 
 
 ```python
-#Find the total number of months included in the dataset.
-#using the built in "len" method 
-total_months = len(dates)
+#print total number of records in sales data
+#should be 74125 minus the header so 74124 rows. 
 
-total_months
+print(len(sales))
 ```
 
-
-
-
-    86
-
-
-
-
-```python
-#using Numpy diff() method to compute all changes in profit/losses
-#Link for reference purposes: https://numpy.org/doc/stable/reference/generated/numpy.diff.html
-
-differences  = np.diff(profit_losses)
-
-#the numpy array "differences" now represents all changes in profit/losses
-differences
-```
-
-
-
-
-    array([  116771,  -662642,  -391430,   379920,   212354,   510239,
-            -428211,  -821271,   693918,   416278,  -974163,   860159,
-           -1115009,  1033048,    95318,  -308093,    99052,  -521393,
-             605450,   231727,   -65187,  -702716,   177975, -1065544,
-            1926159,  -917805,   898730,  -334262,  -246499,   -64055,
-           -1529236,  1497596,   304914,  -635801,   398319,  -183161,
-             -37864,  -253689,   403655,    94168,   306877,   -83000,
-             210462, -2196167,  1465222,  -956983,  1838447,  -468003,
-             -64602,   206242,  -242155,  -449079,   315198,   241099,
-             111540,   365942,  -219310,  -368665,   409837,   151210,
-            -110244,  -341938, -1212159,   683246,   -70825,   335594,
-             417334,  -272194,  -236462,   657432,  -211262,  -128237,
-           -1750387,   925441,   932089,  -311434,   267252, -1876758,
-            1733696,   198551,  -665765,   693229,  -734926,    77242,
-             532869])
-
-
-
-
-```python
-#Using max method for the greatest increase in profits over the entire period.
-greatest_increase_profits = max(differences)
-greatest_increase_profits
-
-```
-
-
-
-
-    1926159
-
-
-
-
-```python
-#Using min method for the greatest decrease in profits over the entire period.
-greatest_decrease_profits = min(differences)
-greatest_decrease_profits
-```
-
-
-
-
-    -2196167
-
-
-
-
-```python
-#Using the Numpy average method for the average change in profits over the entire period.
-average_change = np.average(differences)
-average_change
-```
-
-
-
-
-    -2315.1176470588234
-
-
-
-
-```python
-#this is to match the inc/decrease index with the correct month value 
-
-#use where() method to find index of greatest increase & decrease
-max_index = np.where(differences == greatest_increase_profits)
-min_index = np.where(differences == greatest_decrease_profits)
-
-#compare dates and differences array. then make new variable to hold difference
-if (len(differences)) != (len(dates)): 
-    length_diff = np.absolute(len(differences) - len(dates))
-
-#to account for the header, we adjust for that difference to the index. 
-adjusted_max = int(max_index[0]) + length_diff
-adjusted_min = int(min_index[0]) + length_diff
-
-#set the index for dates as either adjusted max/min with the difference added
-max_date = dates[adjusted_max]
-min_date = dates[adjusted_min]
-```
-
-
-```python
-#print the analysis to the terminal 
-
-print("Financial Analysis")
-print("----------------------------")
-print(f"Total Months: {total_months}")
-print(f"Total: ${total_profit_losses}")
-print(f"Average  Change: ${round(average_change, 2)}")
-print(f"Greatest Increase in Profits: {max_date} (${greatest_increase_profits})")
-print(f"Greatest Decrease in Profits: {min_date} (${greatest_decrease_profits})")
-```
-
-    Financial Analysis
-    ----------------------------
-    Total Months: 86
-    Total: $38382578
-    Average  Change: $-2315.12
-    Greatest Increase in Profits: Feb-2012 ($1926159)
-    Greatest Decrease in Profits: Sep-2013 ($-2196167)
+    74124
     
 
 
 ```python
-# export a text file with the results.
+#write the output to a txt file 
 output_file = Path('./Resources/output.txt')
 
-# use file.write to output to the file. 
-with open(output_file, 'w') as file:
-    file.write("Financial Analysis\n")
-    file.write("----------------------------\n")
-    file.write(f"Total Months: {total_months}\n")
-    file.write(f"Total: ${total_profit_losses}\n")
-    file.write(f"Average  Change: ${round(average_change, 2)}\n")
-    file.write(f"Greatest Increase in Profits: {max_date} (${greatest_increase_profits})\n")
-    file.write(f"Greatest Decrease in Profits: {min_date} (${greatest_decrease_profits})")
+output_file
 ```
 
+
+
+
+    WindowsPath('Resources/output.txt')
+
+
+
+
+```python
+# use file.write to output to the file. 
+
+with open(output_file, 'w') as file:
+     for key, value in report.items(): 
+        file.write('%s:%s\n' % (key, value))
+```
