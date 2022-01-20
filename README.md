@@ -4,7 +4,7 @@
 
 [![PyBankImage](https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank/blob/main/PyBank/Resources/revenue-per-lead.jpg)](https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank/blob/main/PyBank/main.ipynb)
 
-* This repository includes python Jupyter notebooks and associated files for the PyBank and PyRamen Exercises.
+Live Deployed Page: https://benjaminweymouth.github.io/Python-Data-Structures-PyBank-PyRamen/
 
 * The purpose of this code is to demonstrate Python proficiency in working with CSV files, lists, dictionaries, loops and particulary nested data structures. 
 
