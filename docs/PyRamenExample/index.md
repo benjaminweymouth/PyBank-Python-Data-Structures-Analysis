@@ -1,9 +1,9 @@
 # PyRamen Example: Methods / Nested Data Structures
 
 ## Code Explanation & Dataset
-The purpose of this code is to analyze a business's financial performance by cross-referencing their sales data with internal product data to figure out revenues and costs for the year.
+The purpose of this code is to analyze a business's financial performance by cross-referencing their sales data with internal product data to figure out revenues and costs for the year. 
 
-The script will utilze the following actions / methods:
+Thus, two different datasets will be utilized to perform the following actions / methods:
 
 - Include a calculation of the total number of months in the dataset. 
 - Calculate the net total amount of Profit/Losses over the entire period. 
