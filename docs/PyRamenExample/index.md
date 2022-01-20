@@ -1,4 +1,18 @@
-# PyRamen Example: Methods / Data Structures
+# PyRamen Example: Methods / Nested Data Structures
+
+## Code Explanation & Dataset
+The purpose of this code is to demonstrate Python proficiency in working with Python methods and nested data structures.
+
+The code below is a Python script for analyze a business's financial performance by cross-referencing their sales data with internal product data to figure out revenues and costs for the year.
+
+The script will utilze the following actions / methods:
+
+- Include a calculation of the total number of months in the dataset. 
+- Calculate the net total amount of Profit/Losses over the entire period. 
+- Calculate the average of the changes in Profit/Losses over the entire period. 
+- Calculate the greatest increase in Profits over the entire period (Date and Amount). 
+- Calculate the greatest decrease in Losses over the entire period (Date and Amount).
+- Print the analysis and export the analysis to a text file that contains the final results. 
 
  
  ```python
