@@ -1,11 +1,5 @@
-# Python For Finance
-# Methods and Data Structures: PyBank and PyRamen
-
-
-
-[![PyBankImage](https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank/blob/main/PyBank/Resources/revenue-per-lead.jpg)](https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank/blob/main/PyBank/main.ipynb)
-
-Live Deployed Page: https://benjaminweymouth.github.io/Python-Data-Structures-PyBank-PyRamen/
+# Python For Finance: Methods and Data Structures
+# PyBank and PyRamen Examples
 
 * The purpose of this code is to demonstrate Python proficiency in working with CSV files, lists, dictionaries, loops and particulary nested data structures. 
 
