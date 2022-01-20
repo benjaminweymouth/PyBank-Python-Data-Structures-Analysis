@@ -1,4 +1,4 @@
-# PyRamen Example: Methods / Nested Data Structures
+# PyRamen: Python Financial Analysis & Nested Data Structures
 
 ## Code Explanation & Dataset
 The purpose of this code is to analyze a business's financial performance by cross-referencing their sales data with internal product data to figure out revenues and costs for the year. 
