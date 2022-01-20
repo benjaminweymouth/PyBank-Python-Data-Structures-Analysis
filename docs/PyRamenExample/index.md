@@ -1,8 +1,8 @@
 # PyRamen Example: Methods / Data Structures
 
-## Code Explanation & Dataset
+## Code is Divided into two pages: 
 
-The purpose of this code is to demonstrate Python proficiency in working with CSV files, lists, dictionaries, loops and particulary nested data structures. 
+## PyBank:  https://benjaminweymouth.github.io/Python-Data-Structures-PyBank-PyRamen/PyBankExample
 
  ```python
 #PyRamen - Python Homework 1 - Benjamin Weymouth 
