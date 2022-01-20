@@ -1,4 +1,4 @@
-## Python for Finance: Examples in Methods and Data Structures
+## PPython for Finance: Methods / Data Structures
 
 You can use the [editor on GitHub](https://github.com/benjaminweymouth/Python-Data-Structures-PyBank-PyRamen/edit/gh-pages/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
