@@ -10,5 +10,5 @@ This repo explores Python methods and data structures in two different Python sc
 
 The two examples are as follows:
 
-PyBank: where I utilize a Python script for analyzing the financial records of a fictional company.
-PyRamen:: where I utilize I utilize a dataset: budget_data.csv. This dataset is composed of two columns, Date and Profit/Losses.
+[PyBank](https://github.com/benjaminweymouth/Python-Data-Structures-PyBank-PyRamen/blob/main/PyBank/main.ipynb): where I utilize a Python script for analyzing the financial records of a fictional company. < br> 
+PyRamen: where I utilize I utilize a dataset: budget_data.csv. This dataset is composed of two columns, Date and Profit/Losses.
