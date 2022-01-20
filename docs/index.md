@@ -1,3 +1,5 @@
+[![PyBankImage](https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank/blob/main/PyBank/Resources/revenue-per-lead.jpg)](https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank/blob/main/PyBank/main.ipynb)
+
 ```python
 #PyBank homework exercise 1. Name: Benjamin Weymouth 
 ```
