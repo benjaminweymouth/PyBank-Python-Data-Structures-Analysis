@@ -1,6 +1,6 @@
 ## Python for Finance: Methods / Data Structures
 
-This pages features links for two examples, each with a separate dataset, and each exploring different aspects of Python methods and data structures.
+This page features links for two examples demonstrating Python in a financial context. Each example uses a separate dataset, and each one explores different aspects of Python methods and data structures for finance.
 
 **The two examples are as follows:** 
 
