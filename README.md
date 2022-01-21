@@ -5,8 +5,7 @@
 [![PyBankImage](https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank/blob/main/PyBank/Resources/revenue-per-lead.jpg)](https://github.com/benjaminweymouth/Python-Methods-and-Data-Structures-PyBank/blob/main/PyBank/main.ipynb)
 
 
-
-This repo explores Python methods and data structures in two different Python scripts.
+In two separate Python scripts, I perform financial analysis of csv datasets. This analysis features two examples, each with a separate dataset, and each exploring different Python methods and data structures.
 
 The two examples are as follows:
 
