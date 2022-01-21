@@ -1,8 +1,8 @@
-# Python for Finance: Methods / Data Structures
+# Python for Finance: PyBank Example
 
-## Code Explanation & Dataset
+## PyBank: Code Explanation & Dataset
 
-The purpose of this code is to demonstrate Python proficiency in working with CSV files, lists, dictionaries, loops and particulary nested data structures. 
+The purpose of this PyBank code is to demonstrate Python proficiency in working with CSV files, lists, dictionaries, loops and particulary nested data structures. 
 
 The code below is a Python script for analyzing the financial records of a fictional company. I utilize a dataset: budget_data.csv. This dataset is composed of two columns, Date and Profit/Losses. This code originally appeared in a Jupyter notebook on Github. 
 
