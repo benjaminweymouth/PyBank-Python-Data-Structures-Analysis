@@ -1,6 +1,6 @@
 ## Python for Finance: Methods / Data Structures
 
-This repo explores Python methods and data structures in two different Python scripts.
+This analysis features two examples, each with a separate dataset, and each exploring different Python methods and data structures.
 
 **The two examples are as follows:** 
 
