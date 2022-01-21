@@ -13,11 +13,6 @@ Thus, two different datasets will be utilized to perform the following actions /
 - Print the analysis and export the analysis to a text file that contains the final results. 
 
  
- ```python
-#PyRamen - Python Homework 1 - Benjamin Weymouth 
-```
-
-
 ```python
 #import required libraries 
 import csv
