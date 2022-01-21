@@ -262,3 +262,9 @@ with open(output_file, 'w') as file:
     file.write(f"Greatest Decrease in Profits: {min_date} (${greatest_decrease_profits})")
 ```
 
+```python
+## Outcome / Results 
+
+In this case the outcome is seen when you open the output.txt file and there should be the output written to the file. The output.txt file should be found in the resources folder. The file.write method was utilized and the filepath was set into the output_file variable. 
+```
+
