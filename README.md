@@ -20,10 +20,13 @@ https://benjaminweymouth.github.io/PyBank-Python-Data-Structures-Analysis/
 
 ### Selected Screenshots: 
 
+![image](https://user-images.githubusercontent.com/47256041/153515038-6200dbce-825d-42c0-b82a-c2af53cb7c0d.png)
+
+
 ![image](https://user-images.githubusercontent.com/47256041/153515075-d64f0d0e-5453-4efe-887b-02eef7a0dca3.png)
 
 
-![image](https://user-images.githubusercontent.com/47256041/153515038-6200dbce-825d-42c0-b82a-c2af53cb7c0d.png)
+
 
 ![image](https://user-images.githubusercontent.com/47256041/153515122-082181da-94c8-42ba-9ebb-c92a98855892.png)
 
