@@ -22,6 +22,8 @@ https://benjaminweymouth.github.io/PyBank-Python-Data-Structures-Analysis/
 
 Financial Analysis in Python Examples: PyBank 
 
+This analysis is a Python script for analyzing the financial records of a fictional company.  
+
 [![image](https://user-images.githubusercontent.com/47256041/153515038-6200dbce-825d-42c0-b82a-c2af53cb7c0d.png)](https://benjaminweymouth.github.io/PyBank-Python-Data-Structures-Analysis/PyBankExample/)
 
 
@@ -33,6 +35,18 @@ Financial Analysis in Python Examples: PyBank
 [![image](https://user-images.githubusercontent.com/47256041/153515122-082181da-94c8-42ba-9ebb-c92a98855892.png)](https://benjaminweymouth.github.io/PyBank-Python-Data-Structures-Analysis/PyBankExample/)
 
 Financial Analysis in Python Examples: PyRamen
+
+This script is mean to analyze a business’s financial performance by cross-referencing their sales data with internal product data to figure out revenues and costs for the year.
+
+![image](https://user-images.githubusercontent.com/47256041/153515779-c96c0704-fda7-447d-b0ec-fb8fa26211cc.png)
+
+It utilizes nested loops to iterate through the dataset 
+
+![image](https://user-images.githubusercontent.com/47256041/153515839-960661da-e6eb-460c-bf70-72f6a6565edc.png)
+
+And provides an analytical report at the concluding stage of the analysis: 
+
+![image](https://user-images.githubusercontent.com/47256041/153515910-1aa4365a-78de-4435-8c73-74c7421331d9.png)
 
 
 
