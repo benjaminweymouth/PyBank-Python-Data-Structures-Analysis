@@ -13,7 +13,10 @@ The two examples are as follows:
 
 [PyRamen](https://github.com/benjaminweymouth/Python-Data-Structures-PyBank-PyRamen/blob/main/PyRamen/main.ipynb): The purpose of this code is to analyze a business’s financial performance by cross-referencing their sales data with internal product data to figure out revenues and costs for the year.
 
-Live Deployed Page: https://benjaminweymouth.github.io/PyBank-Python-Data-Structures-Analysis/
+
+### Live Deployed Page:
+
+https://benjaminweymouth.github.io/PyBank-Python-Data-Structures-Analysis/
 
 ### Seleted Screenshots: 
 
