@@ -18,7 +18,7 @@ The two examples are as follows:
 
 https://benjaminweymouth.github.io/PyBank-Python-Data-Structures-Analysis/
 
-### Seleted Screenshots: 
+### Selected Screenshots: 
 
 ![image](https://user-images.githubusercontent.com/47256041/153515075-d64f0d0e-5453-4efe-887b-02eef7a0dca3.png)
 
